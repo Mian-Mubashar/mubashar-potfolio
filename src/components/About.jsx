@@ -51,7 +51,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[14px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-1"
       >
-        Hi, I’m Swastik Yadav — a passionate Frontend / Full Stack Developer
+        Hi, I’m Mubashar A passionate Frontend / Full Stack Developer
         with hands-on experience in building modern, responsive web applications
         using technologies like React.js, Tailwind CSS, Node.js, and MongoDB.
         I’ve worked on real-world freelance projects and participated in

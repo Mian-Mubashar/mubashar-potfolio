@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ComputersCanvas } from "./canvas";
 import { styles } from "../styles";
 
-
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto ">
@@ -18,12 +17,21 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Mubashar</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            i develop 3d visuals, user <br className="sm:block hidden" />{" "}
+            I develop 3D visuals, user <br className="sm:block hidden" />{" "}
             intuitive user interfaces, and modern web applications.
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <div
+        style={{ paddingTop: "110px", width: "100%", height: "115%" }}
+        className="absolute top-0 left-0"
+      >
+        <ComputersCanvas />
+      </div>
+      {/* <div className="absolute inset-0 pt-[110px] w-full h-full">
+  <ComputersCanvas />
+</div> */}
+
       <div className="absolute sm:bottom-24 bottom-36 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
