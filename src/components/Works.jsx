@@ -23,7 +23,8 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl  min-w-[360px] sm:w-[360px]"
+        className="bg-tertiary p-5 rounded-2xl w-full max-w-[320px] sm:max-w-[360px] text-center"
+
       >
         <div
           className="w-full h-[230px] relative cursor-pointer"
@@ -82,7 +83,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-1"
+          className="mt-3 text-secondary text-[17px] sm:text-[17px] max-w-1xl sm:leading-[30px] leading-1"
         >
           Here are some of the projects I’ve built using modern web
           technologies. From frontend animations to backend logic, With live
