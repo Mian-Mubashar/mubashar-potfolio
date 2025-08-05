@@ -24,7 +24,6 @@ const ProjectCard = ({
           speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl w-full max-w-[320px] sm:max-w-[360px] text-center"
-
       >
         <div
           className="w-full h-[230px] relative cursor-pointer"
