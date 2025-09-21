@@ -5,6 +5,9 @@ import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import emailjs from "@emailjs/browser";
+import whatsapp from "../images/whatsappdownload.png";
+import linkdin from "../images/linkdin-remove.png";
+import github from "../images/github-remove-bg.png";
 
 // template_49jw5yq
 // service_9gvq101
@@ -15,6 +18,7 @@ const Contact = () => {
   const [form, setform] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [loading, setloading] = useState(false);
@@ -35,22 +39,28 @@ const Contact = () => {
         // "service_9gvq101",
         // "template_49jw5yq",
         "service_zgyt0vk",
-        "template_1c1ti45",
+        "template_nwfftqb",
         {
           from_name: form.name,
 
           from_email: form.email,
 
+          from_phone: form.phone,
+
           message: form.message,
         },
-        "3lDtCP31mFt_52s7F"
+        "eSVoigCz-XbFe0qqW"
       )
       .then(
         () => {
           setloading(false);
-          alert("Thank you. I will get back to you as soon as possible");
+          alert(
+            `Thank you, ${form.name}! I will get back to you as soon as possible.`
+          );
+
           setform({
             name: "",
+            phone: "",
             email: "",
             message: "",
           });
@@ -83,10 +93,11 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handlechange}
-              placeholder="what's your name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
@@ -94,7 +105,20 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handlechange}
-              placeholder="what's your email?"
+              placeholder="What's your email?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">
+              Your Phone Number
+            </span>
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={handlechange}
+              placeholder="What's your Phone Number?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -106,7 +130,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handlechange}
-              placeholder="what do you want to say?"
+              placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -116,6 +140,74 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className="font-sans text-gray-800 dark:text-gray-100">
+            <p className="text-sm uppercase tracking-wide font-semibold text-gray-500">
+              Write an E-mail
+            </p>
+            <p className="text-lg font-medium hover:text-blue-500 transition-colors">
+              mubasharhanif24@gmail.com
+            </p>
+
+            <br />
+
+            <p className="text-sm uppercase tracking-wide font-semibold text-gray-500">
+              Call At
+            </p>
+            <p className="text-lg font-medium">+92 334-9730227</p>
+
+            {/* Images row */}
+            {/* Images row */}
+            <div className="mt-6 flex gap-4">
+              {/* Github */}
+              <a
+                href="https://github.com/YourUserName"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                className="group relative"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  className="w-11 h-11 object-cover rounded-full border-2 border-white
+                 transition-all duration-300 
+                 group-hover:bg-gray-900 p-2"
+                />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://github.com/Mian-Mubashar"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+                className="group relative"
+              >
+                <img
+                  src={linkdin}
+                  alt="LinkedIn"
+                  className="w-11 h-11 object-cover rounded-full border-2 border-white
+                 transition-all duration-300"
+                />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/923349730227"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="WhatsApp"
+                className="group relative"
+              >
+                <img
+                  src={whatsapp}
+                  alt="WhatsApp"
+                  className="w-11 h-11 object-cover rounded-full border-2 border-white
+                 transition-all duration-300"
+                />
+              </a>
+            </div>
+          </div>
         </form>
       </motion.div>
       <motion.div
