@@ -144,7 +144,7 @@ const Contact = () => {
             <p className="text-sm uppercase tracking-wide font-semibold text-gray-500">
               Write an E-mail
             </p>
-            <p className="text-lg font-medium hover:text-blue-500 transition-colors">
+            <p className="text-lg font-medium hover:text-blue-500 transition-colors text-white">
               mubasharhanif24@gmail.com
             </p>
 
@@ -153,7 +153,7 @@ const Contact = () => {
             <p className="text-sm uppercase tracking-wide font-semibold text-gray-500">
               Call At
             </p>
-            <p className="text-lg font-medium">+92 334-9730227</p>
+            <p className="text-lg font-medium text-white">+92 334-9730227</p>
 
             {/* Images row */}
             {/* Images row */}
