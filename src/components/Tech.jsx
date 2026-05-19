@@ -26,7 +26,7 @@ const Tech = () => {
   return (
     <>
       <motion.div className="w-full text-center py-10">
-        <p className={styles.sectionSubText}>What I Use to Build</p>
+        <p className={styles.sectionSubText}>MERN, Next.js & AI Stack</p>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
 

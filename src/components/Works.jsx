@@ -84,10 +84,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] sm:text-[17px] max-w-1xl sm:leading-[30px] leading-1"
         >
-          Here are some of the projects I’ve built using modern web
-          technologies. From frontend animations to backend logic, With live
-          demos and source code provided, these works reflect my hands-on
-          experience in building scalable and maintainable web applications.
+          Projects built with MERN stack, Next.js, and AI integration — including
+          RAG systems, OpenAI APIs, Pinecone vector search, and Prisma ORM.
+          These works reflect hands-on experience in full stack and AI-powered
+          web application development.
         </motion.p>
       </div>
       <div className=" mt-20 flex flex-wrap gap-7">
