@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mubasharportfolio.vercel.app/sitemap.xml

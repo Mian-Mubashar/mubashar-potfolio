@@ -1,0 +1,26 @@
+{
+  "name": "Next Rise Solutions | Mubashar Hanif",
+  "short_name": "Next Rise",
+  "description": "Full Stack Web Developer portfolio – React, Next.js, Node.js, Laravel. Next Rise Solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/next_rise.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
