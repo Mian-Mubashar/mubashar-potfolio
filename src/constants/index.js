@@ -4,20 +4,16 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
+  figma,
   freelance,
-  shopify,
   sheryians,
   macbookpro,
   falverra,
@@ -48,100 +44,63 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "MERN Stack Developer",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "Next.js Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "AI & RAG Solutions",
     icon: backend,
   },
   {
-    title: "MERN Stack",
+    title: "OpenAI Integration",
     icon: creator,
   },
 ];
 
 const technologies = [
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  { name: "HTML", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "React JS", icon: reactjs },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "SQL", icon: docker },
+  { name: "Prisma", icon: figma },
+  { name: "RAG AI", icon: creator },
+  { name: "Git", icon: git },
+  { name: "JavaScript", icon: javascript },
+  { name: "Next.js", icon: threejs },
 ];
 
 const experiences = [
   {
-    title: "Freelance Frontend Developer",
+    title: "Freelance Full Stack & AI Developer",
     company_name: "Self-employed",
-    icon: freelance, // Replace with any icon you like
+    icon: freelance,
     iconBg: "#0188E3",
     date: "Jan 2023 - Present",
     points: [
-      "Built responsive and interactive web apps using React.js, Tailwind CSS, and GSAP.",
-      "Developed and deployed modern landing pages and portfolio websites for clients.",
-      "Integrated APIs and handled form validation, animations, and smooth scroll effects.",
-      "Delivered pixel-perfect UI designs based on Figma and Adobe XD mockups.",
+      "Built MERN stack and Next.js web applications with scalable REST APIs and Prisma ORM.",
+      "Developed AI-powered platforms using OpenAI, RAG pipelines, Pinecone, and vector databases.",
+      "Integrated intelligent features such as document Q&A, embeddings, and semantic search.",
+      "Delivered production-ready apps with clean UI, authentication, and smooth user experience.",
     ],
   },
   {
     title: "Full Stack Development Trainee",
     company_name: "Sheryians Coding School",
-    icon: sheryians, // Or institute logo
+    icon: sheryians,
     iconBg: "#ffff",
     date: "Aug 2023 - Mar 2025",
     points: [
-      "Completed an intensive training program focused on MERN stack development.",
-      "Built multiple full-stack projects, including CRUD apps and authentication systems.",
-      "Worked with tools like Node.js, Express.js, MongoDB, React.js, and Git.",
-      "Gained hands-on experience in deploying apps and following clean code practices.",
+      "Completed intensive MERN stack training with React, Node.js, Express, and MongoDB.",
+      "Built full-stack projects including CRUD apps, authentication, and API integrations.",
+      "Learned Next.js, TypeScript, and modern tools for high-performance web applications.",
+      "Gained hands-on experience in deployment, Git workflows, and maintainable code practices.",
     ],
   },
 ];
@@ -219,28 +178,30 @@ const projects = [
     live_website_link: "https://falverra-recode.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "AI Web Platform",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An AI-powered full stack web platform built with Next.js and MERN, featuring OpenAI integration, RAG architecture, Pinecone vector database, and Prisma ORM for smart document search and chat.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "openai",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "rag",
         color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "orange-text-gradient",
       },
     ],
     image: tripguide,
-    // github link ⬇️
-    source_code_link: "https://github.com/",
-    // project link ⬇️
-    live_website_link: "https://app.netlify.com/teams/gitswastik08/projects",
+    source_code_link: "https://github.com/Mian-Mubashar",
+    live_website_link: "https://www.linkedin.com/in/mubashar-hanif-71b473212/",
   },
 ];
 
