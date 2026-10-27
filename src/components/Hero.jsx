@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className="text-[#915eff]">Mubasharcdscsd</span>
+            Hi, I'm <span className="text-[#915eff]">Mubashar</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
             I build MERN & Next.js apps and AI-powered <br className="sm:block hidden" />{" "}
